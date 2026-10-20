@@ -1,11 +1,13 @@
 # Moonlight Player Client
 
-Player downloads for Wonderland Moonlight.
+**[Download the client ZIP](https://github.com/ItzBrandy/Moonlight-Public/releases/latest/download/Moonlight-Client.zip)**
 
-[Download Moonlight Installer](https://github.com/ItzBrandy/Moonlight-Public/releases/latest/download/Moonlight-Installer.exe)
+The ZIP includes the full game, Moonlight launcher, and Moonlight Installer.exe.
 
-The small installer downloads and verifies the latest client, installs it, and adds the Moonlight launcher. The launcher checks for future client updates automatically.
+1. Download the ZIP and choose **Extract All**.
+2. Open the extracted folder and run **Moonlight Play.exe**.
+3. If you share the host's home network, choose **Same home (LAN)**.
 
-[All client releases and notes](https://github.com/ItzBrandy/Moonlight-Public/releases)
+The installer is included if you prefer to install into another folder and create a desktop shortcut. You can play directly from the extracted folder using the launcher.
 
-This repository contains client distribution files and download instructions only.
+Game downloads are attached under **[Releases](https://github.com/ItzBrandy/Moonlight-Public/releases/latest)**. The repository's main file list contains download instructions.
