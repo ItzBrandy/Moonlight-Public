@@ -2,11 +2,13 @@
 
 **[Download the full game ZIP](https://github.com/ItzBrandy/Moonlight-Public/releases/latest/download/Moonlight-Client.zip)**
 
-Current client: **0.60.20**. The ZIP includes the game, launcher, and **Moonlight Installer.exe**.
+Current client: **0.60.21**. The ZIP includes the game, launcher, and **Moonlight Installer.exe**.
 
 1. Download the ZIP and choose **Extract All**.
-2. Open the extracted game folder and run **Moonlight Play.exe**.
-3. Let the launcher finish checking updates, then click **Play**. The server connection is already configured.
+2. Open the extracted game folder and run **Moonlight Patcher.exe**. Existing Moonlight Play shortcuts still work.
+3. Let the patcher finish checking updates, then click **Play**. The server connection is already configured.
+
+If an older launcher cannot update, run the [latest small installer](https://github.com/ItzBrandy/Moonlight-Public/releases/latest/download/Moonlight-Installer.exe) into your existing player folder once.
 
 You can play from the extracted folder. The included installer is optional if you prefer an installation folder and desktop shortcut. Click Play again to open another client; close all game windows before installing updates.
 
