@@ -1,53 +1,39 @@
 # Wonderland Moonlight
 
-Current client: **0.60.26**, published **October 25, 2026**.
+Current update: **0.61** (client version **0.61.0**).
 
-**[Download the full game ZIP](https://github.com/ItzBrandy/Moonlight-Public/releases/download/moonlight-client-v0.60.26/Moonlight-Client.zip)** · **[0.60.26 release notes and assets](https://github.com/ItzBrandy/Moonlight-Public/releases/tag/moonlight-client-v0.60.26)**
+[Download the full game ZIP](https://github.com/ItzBrandy/Moonlight-Public/releases/download/moonlight-client-v0.61.0/Moonlight-Client.zip) | [Read the update log](https://github.com/ItzBrandy/Moonlight-Public/releases/tag/moonlight-client-v0.61.0) | [Small installer](https://github.com/ItzBrandy/Moonlight-Public/releases/download/moonlight-client-v0.61.0/Moonlight-Installer.exe)
 
 ## Install, update, and play
 
-1. Download **Moonlight-Client.zip** from the release above and choose **Extract All**.
-2. Close all Moonlight game windows before installing updates.
-3. Open the extracted game folder and run **Moonlight Patcher.exe**. Let it finish checking for and installing updates.
-4. Open **aLogin-English** in the game folder to play. Use the patcher for updates; launch the game with **aLogin-English**.
+1. Download the full ZIP and choose **Extract All**, or run the small installer.
+2. Close your Moonlight game windows, then run **Moonlight Patcher.exe** to finish updating.
+3. Open **aLogin-English.exe** to play. The server connection is already configured.
 
-You can play from the extracted folder. The server connection is already configured.
+Existing players can update through Moonlight Patcher. If an older patcher cannot update, run the small installer into the existing game folder once. Player settings are preserved.
 
-If an older launcher cannot update, run the [small installer for 0.60.26](https://github.com/ItzBrandy/Moonlight-Public/releases/download/moonlight-client-v0.60.26/Moonlight-Installer.exe) into your existing player folder once, then follow the update and launch steps above.
-
-The release also provides **Moonlight-Setup.exe** as an alternative installation package. The ZIP is the full client download; the separate `.pak` files and JSON manifests are update/package assets, not game launchers. In particular, **moonlight-0.60.26-from-0.60.25.pak** is an incremental update from 0.60.25, not a full installation.
-
-Version 0.60.26 keeps one user-facing patcher and one **aLogin-English** game executable. Required Tools/Update helpers remain included. Older duplicate launchers are moved into a recovery folder, abandoned installer temporary folders are cleaned automatically, and player data and settings are kept.
-
-For download verification, the release includes **Moonlight-Client.zip.sha256** and **SHA256SUMS.txt**. Compare your downloaded file's SHA-256 hash with the corresponding published checksum.
+The ZIP is the full client. The `.pak` and JSON files are updater assets. `moonlight-0.61.0-from-0.60.26.pak` is an incremental patch for 0.60.26, not a full installation. Use the published SHA256SUMS.txt or ZIP checksum to verify downloads.
 
 ## Create an account
 
-Enter an unused account name beginning with **LD00** and choose a password. Then use **Create Char**. The first character wizard sets a new login password and a separate deletion code; keep both and use the new password on later logins.
+Enter an unused account name beginning with **LD00** and choose a password, then select **Create Char**. The first-character wizard sets a new login password and a separate deletion code. Keep both; use the new password on later logins.
 
-## What's new in 0.60.26
+## Update log
 
-- **Battle watching and joining:** Battle bubbles support watching and stopping watching. You can join an ongoing fight when the leader enables **Joining Battle** and fewer than four player seats are occupied. Pets and spectators do not use player seats. Joining actors wait until the next round before acting.
-- **Battle fixes:** Joining clients initialize their current-round display, reinforcements first act on the following round, and idle updates no longer overwrite shared-battle HP/SP with older saved values. Grouped monster single-target attacks apply when the group is within 100 SPD.
-- **Party tents:** Nearby party members enter the leader's tent together and return to the outdoor position together. Guests cannot change the owner's furniture or storage. Outdoor tent visibility and reclaiming after leaving are restored.
-- **Persistent Storage Room:** Deposits, moves, and withdrawals persist. Nonempty storage cannot be packed up.
-- **Crafting recovery and attachments:** Fixes cover variable-length requests, original recipe timers, zero-minute recipes, and resuming or collecting saved jobs. Compatible Work Platform attachments, including Stone Knife and Wooden Saw, are supported and their saved records are restored. Placement/pickup feedback is shown, with redundant completion and item-received messages removed.
-- **World and quest fixes:** Corrected beach and identified GS cave/Waterfall Grotto battle backgrounds, idle cellar/cask objects, and a one-Star reward for a new successful Pig Nightmare completion. Earlier Mining, Soul Dodge, and Arrow Rain reward/recovery changes remain included; this does not mean every prerequisite quest is complete.
-- **Tools and character reset:** Item catalog searches run in the background with cached icons, and pet EXP targets the active battle pet. A confirmed character-reset action returns the character to level 1, clears learned skills, and refunds allocated stat points while retaining inventory and quests, with a recovery backup.
+Moonlight 0.61
 
-See the [full release notes](https://github.com/ItzBrandy/Moonlight-Public/releases/tag/moonlight-client-v0.60.26) for all changes.
+I've rolled the latest fixes and additions into one update. Here's what you'll actually see in game:
 
-## Known limitations
+- Battles: watch and leave fights, join open battles with available player slots, and bring your companions along. Joining characters wait until the next round to act.
+- Tents: enter other players' nearby tents without needing a party, use saved Storage Room inventory, and discard items through the recycling bucket. Fixed repeated tent creation and improved entering/leaving.
+- Crafting: improved recipe requests, tool attachments, timers, and collecting saved crafting jobs.
+- Friends and chat: fixed online status, friend requests, whispers, and sending mail. The mailbox shows recent messages first.
+- Shops: fixed buying/selling through the original shop screens, including stack sales. Shop stock and prices can now refresh in game. Fixed the broken Mall display; Mall stock is still empty.
+- Food: HP/SP food can be eaten even when you're full, with recovery staying capped.
+- English: more translated menus, toolbar buttons, return-point options, and item-use messages. Cleaned up map coordinates and renamed Deep Jungle, Fog Forest, and Ghostdom.
+- Quests: fixed saved completion flags and repeated scenes, including Sasha's doorway sequence. Holy Village donation and supported recruitment exchanges retain their rewards and progress. Pig Nightmare awards its Star on a new completion.
+- World and companions: improved roaming encounters, party battle HP/SP sync, companion controls, and heavy-item speed penalties. Removed Noa from Kelan.
 
-- Cha Park crystal-ball hand-in and the complete GS quest chain are **not fixed** in this release.
-- The permanent E-remote button, missing Korea quest markers, Daniel pose/rebirth clipping, and spacecraft-capsule activation remain unfinished.
-- Crafting progress-bar graphics and the latest join-round floating-number correction still need in-game visual confirmation.
-- This is a testing release; not all reported bugs are resolved.
+Run Moonlight Patcher before logging in so your client matches the server.
 
-## Testing and support
-
-This is a testing server with **100× battle EXP**. Server availability depends on the host keeping the service online. Report bugs to the host.
-
-**[All releases](https://github.com/ItzBrandy/Moonlight-Public/releases)**
-
-This public repository contains player downloads and instructions. Server source, accounts, saves, credentials, and private host configuration are excluded.
+Still being worked on: general alchemy/spar compounding, Prism Orb element changes, the post-rebirth level cap, and remaining quest/animation issues. This update does not complete every quest or translate every screen.
